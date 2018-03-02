@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <style type="text/css">
+    	
+    	#contenedor {
+    			width: 100%;
+		}
+
+    	.cuadro {
+ 			margin-left: 5%;
+    		margin-top: 50px;
+			width: 500px;
+			padding: 30px;
+		}
+
+		h1 {
+			margin-left: 40%;
+		}
+		
+    </style>
+</head>
+<body>
+	<div id="contenedor">
+	<h1>Registrese ahora</h1>
+	<form method="POST" action='<?php loginFormulario.php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+		<fieldset class="cuadro">
+			<legend>Registrarse</legend>
+	            Usuario<br>
+	            <input type="text" name="usuario" size="30"/><br><br>
+	            Email</br>
+	            <input type="text" name="email" size="30"/><br><br>
+	            Contraseña<br>
+	            <input type="password" name="pass" size="30"/><br><br>
+	            Genero<br>
+	            <input type="radio" name="sexo" value="Varón"/> Varón<br>
+				<input type="radio" name="sexo" value="Mujer"/> Mujer<br><br>
+				Idiomas<br>
+				<input type="checkbox" name="lenguajes[]" value="Inglés"/> Inglés<br>
+				<input type="checkbox" name="lenguajes[]" value="Francés"/> Francés<br>
+				<input type="checkbox" name="lenguajes[]" value="Español"/> Español<br>
+				<input type="checkbox" name="lenguajes[]" value="Italiano"/> Italiano<br>
+				<input type="checkbox" name="lenguajes[]" value="Portugués"/> Portugués<br><br>
+				Nacionalidad	<select name="nacionalidad">
+									<option> </option>
+								    <option>Inglatera</option>
+								    <option>Francia</option>
+								    <option>Español</option>
+								    <option>Italiano</option>
+								    <option>Portugal</option>
+		  						</select><br><br>
+		  		Aficiones	<select name="aficiones">
+		  						<option> </option>
+							    <option>Deporte</option>
+							    <option>Música</option>
+							    <option>Acuáticos</option>
+							    <option>Cultura</option>
+							</select><br><br>
+
+				<textarea name="coment" rows="5" cols="55">Aristóteles (filósofo griego) dijo: ” La amistad es un alma que habita en dos cuerpos; un corazón que habita en dos almas.” Y Miguel de Cervantes citó: “Confía en el tiempo, que suele dar dulces salidas a muchas amargas dificultades”
+				</textarea><br><br>
+
+	            <input type="submit"><br><br>
+	        
+	   </fieldset>
+	</form>
+
+	
+	</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+	"en": {
+		"tit": "Show notes",
+		"dat": "Student data",
+		"nom": "Full name",
+		"not": "Your course note",
+		"env": "Submit"
+	},
+	"es": {
+		"tit": "Mostrar notas",
+		"dat": "Datos del estudiante",
+		"nom": "Nombre completo",
+		"not": "Nota del curso",
+		"env": "Enviar"
+	},
+	"ch": {
+		"tit": "顯示註釋",
+		"dat": "學生資料",
+		"nom": "全名",
+		"not": "你的課程筆記",
+		"env": "發送"
+	}
+}
